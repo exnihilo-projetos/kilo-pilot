@@ -1,0 +1,15 @@
+{
+  "name": "kilo-pilot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reference pilot proving spec-as-contract, agent mandate and eval gates.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "spec:trace": "node tools/verification/spec-trace.mjs",
+    "eval": "node tools/agent/eval.mjs",
+    "mandate": "node tools/agent/mandate-guard.mjs",
+    "gate": "bash tools/verification/pilot-gate.sh"
+  }
+}

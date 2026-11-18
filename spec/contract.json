@@ -1,0 +1,33 @@
+{
+  "spec": "SPEC-0001",
+  "version": "1.0.0",
+  "status": "approved",
+  "owner": "founder",
+  "acs": [
+    {
+      "id": "AC-1",
+      "criterion": "parse canonical decimal strings into integer cents; reject >2 decimals, non-canonical and non-string",
+      "testTag": "[AC-1]"
+    },
+    {
+      "id": "AC-2",
+      "criterion": "add integer cents exactly; empty sum is zero; reject non-integers",
+      "testTag": "[AC-2]"
+    },
+    {
+      "id": "AC-3",
+      "criterion": "format integer cents as BRL (pt-BR), including negative",
+      "testTag": "[AC-3]"
+    },
+    {
+      "id": "AC-4",
+      "criterion": "assertNonNegative accepts zero/positive and rejects negative/non-integer with typed codes",
+      "testTag": "[AC-4]"
+    }
+  ],
+  "requiredCommands": [
+    "node --test",
+    "node tools/verification/spec-trace.mjs",
+    "node tools/agent/eval.mjs"
+  ]
+}

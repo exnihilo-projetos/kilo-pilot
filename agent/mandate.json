@@ -1,0 +1,18 @@
+{
+  "agentId": "kilo-pilot-operator",
+  "scope": ["src/**", "tests/**", "docs/**"],
+  "budget": {
+    "maxFiles": 4,
+    "maxTokens": 12000,
+    "maxMinutes": 10
+  },
+  "allowedCommands": [
+    "node --test",
+    "node tools/verification/spec-trace.mjs",
+    "node tools/agent/eval.mjs",
+    "node tools/agent/mandate-guard.mjs"
+  ],
+  "issuedAt": "2026-11-18T00:00:00Z",
+  "expiresAt": "2027-12-31T23:59:59Z",
+  "revoked": false
+}

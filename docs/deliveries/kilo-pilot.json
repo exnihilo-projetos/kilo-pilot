@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "project": "kilo-pilot",
+  "status": "PASS",
+  "spec": "SPEC-0001",
+  "ac_count": 4,
+  "acs": [
+    {
+      "id": "AC-1",
+      "tests": [
+        "tests/money.test.js"
+      ]
+    },
+    {
+      "id": "AC-2",
+      "tests": [
+        "tests/money.test.js"
+      ]
+    },
+    {
+      "id": "AC-3",
+      "tests": [
+        "tests/money.test.js"
+      ]
+    },
+    {
+      "id": "AC-4",
+      "tests": [
+        "tests/money.test.js"
+      ]
+    }
+  ],
+  "trace_ok": true,
+  "eval": {
+    "status": "PASS",
+    "score": 5,
+    "total": 5,
+    "baseline": 5
+  },
+  "checks": [
+    {
+      "name": "tests",
+      "status": "pass"
+    },
+    {
+      "name": "spec_trace_selftest",
+      "status": "pass"
+    },
+    {
+      "name": "spec_trace",
+      "status": "pass"
+    },
+    {
+      "name": "mandate_selftest",
+      "status": "pass"
+    },
+    {
+      "name": "mandate",
+      "status": "pass"
+    },
+    {
+      "name": "agent_task",
+      "status": "pass"
+    },
+    {
+      "name": "eval_selftest",
+      "status": "pass"
+    },
+    {
+      "name": "eval",
+      "status": "pass"
+    }
+  ],
+  "generatedAt": "2026-11-18T17:07:23.146Z",
+  "git": {
+    "head": null,
+    "dirty": true
+  }
+}

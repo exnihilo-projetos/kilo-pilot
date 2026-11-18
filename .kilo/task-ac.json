@@ -1,0 +1,24 @@
+{
+  "slug": "kilo-pilot",
+  "type": "e",
+  "goal": "Provar spec-como-contrato, operador com mandato/orcamento/revogacao e eval em um projeto publico minimo.",
+  "requested_by": "founder",
+  "created_at": "2026-11-18T14:15:00Z",
+  "approved_at": "2026-11-18T14:15:00Z",
+  "spec_required": true,
+  "spec_id": "SPEC-0001",
+  "spec_trace_required": true,
+  "agent_mandate_required": true,
+  "agent_eval_required": true,
+  "visual_loop_required": false,
+  "vision_review_required": false,
+  "ui_review_required": false,
+  "layout_required": false,
+  "acceptance": [
+    { "id": "AC-1", "criterion": "parse canonico em centavos", "evidence": "tests/money.test.js" },
+    { "id": "AC-2", "criterion": "soma exata de centavos", "evidence": "tests/money.test.js" },
+    { "id": "AC-3", "criterion": "format BRL", "evidence": "tests/money.test.js" },
+    { "id": "AC-4", "criterion": "non-negative com codigo tipado", "evidence": "tests/money.test.js" }
+  ],
+  "exclusions": ["operador LLM real", "publicacao no GitHub", "integracao runtime global"]
+}

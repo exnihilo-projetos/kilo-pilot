@@ -1,0 +1,6 @@
+{
+  "id": "task-1",
+  "files": ["src/money.js"],
+  "estimatedTokens": 1200,
+  "commands": ["node --test"]
+}

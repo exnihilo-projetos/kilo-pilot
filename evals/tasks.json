@@ -1,0 +1,32 @@
+[
+  {
+    "id": "parse-standard",
+    "operation": "parse",
+    "input": "12.34",
+    "expected": 1234
+  },
+  {
+    "id": "parse-one-decimal",
+    "operation": "parse",
+    "input": "12.3",
+    "expected": 1230
+  },
+  {
+    "id": "add-three",
+    "operation": "add",
+    "input": [10, 20, 5],
+    "expected": 35
+  },
+  {
+    "id": "format-brl",
+    "operation": "format",
+    "input": 1234,
+    "expected": "R$ 12,34"
+  },
+  {
+    "id": "reject-negative",
+    "operation": "nonneg",
+    "input": -1,
+    "expectedError": "NEGATIVE_AMOUNT"
+  }
+]

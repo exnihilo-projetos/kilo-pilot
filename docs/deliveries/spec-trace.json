@@ -1,0 +1,32 @@
+{
+  "spec": "SPEC-0001",
+  "ok": true,
+  "acs": [
+    {
+      "id": "AC-1",
+      "tests": [
+        "tests/money.test.js"
+      ]
+    },
+    {
+      "id": "AC-2",
+      "tests": [
+        "tests/money.test.js"
+      ]
+    },
+    {
+      "id": "AC-3",
+      "tests": [
+        "tests/money.test.js"
+      ]
+    },
+    {
+      "id": "AC-4",
+      "tests": [
+        "tests/money.test.js"
+      ]
+    }
+  ],
+  "orphans": [],
+  "generatedAt": "2026-11-18T17:07:22.247Z"
+}
