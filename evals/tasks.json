@@ -14,7 +14,11 @@
   {
     "id": "add-three",
     "operation": "add",
-    "input": [10, 20, 5],
+    "input": [
+      10,
+      20,
+      5
+    ],
     "expected": 35
   },
   {
@@ -28,5 +32,10 @@
     "operation": "nonneg",
     "input": -1,
     "expectedError": "NEGATIVE_AMOUNT"
+  },
+  {
+    "id": "llm-eval",
+    "command": "node tools/agent/llm-eval.mjs",
+    "expect": 0
   }
 ]

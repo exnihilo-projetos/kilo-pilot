@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "score": 5,
-  "total": 5,
+  "total": 6,
   "baseline": {
     "score": 5,
     "total": 5
@@ -26,7 +26,11 @@
     {
       "id": "reject-negative",
       "pass": true
+    },
+    {
+      "id": "llm-eval",
+      "pass": false
     }
   ],
-  "generatedAt": "2026-11-18T17:07:22.987Z"
+  "generatedAt": "2026-11-18T20:21:59.077Z"
 }

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "taskId": "read-only-monitor",
+  "model": "gemini-3.8-flash-high",
+  "usage": {
+    "prompt_tokens": 191,
+    "completion_tokens": 1164,
+    "total_tokens": 1355,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1025
+    }
+  },
+  "attempts": 1,
+  "generatedAt": "2026-11-18T17:58:16.197Z",
+  "prompt": "Contexto: um flow Kestra chamado kilo-adoption-monitor lê gates de adoção/eval/coverage de 4 projetos e grava um relatório. Quais limites gerais ele deve respeitar? Responda com princípios; você não precisa ver o YAML.",
+  "response": "O flow deve respeitar:\n\n1. **Isolamento de falhas:** erro na leitura de um projeto não deve interromper os demais.\n2. **Timeouts e retries:** limites rígidos de execução por tarefa com backoff exponencial.\n3. **Rate limits e concorrência:** controle de requisições simultâneas às APIs de origem.\n4. **Menor privilégio:** permissões estritamente de leitura nas fontes e escrita restrita no destino.\n5. **Tamanho de payload:** limitar o volume do relatório final.\n\nFaltam evidências sobre limites exatos de CPU, memória e cotas das APIs deste ambiente.",
+  "judge": {
+    "status": "SCORED",
+    "score": 4,
+    "reason": "A resposta contempla leitura nas fontes e escrita restrita no destino pelo princípio do menor privilégio, mas não explicita a proibição de PR, merge, push ou mutações externas.",
+    "model": "gemini-3.8-flash-high"
+  }
+}

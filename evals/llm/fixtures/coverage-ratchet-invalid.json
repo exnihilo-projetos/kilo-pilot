@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "taskId": "coverage-ratchet-invalid",
+  "model": "gemini-3.8-flash-high",
+  "usage": {
+    "prompt_tokens": 184,
+    "completion_tokens": 920,
+    "total_tokens": 1104,
+    "completion_tokens_details": {
+      "reasoning_tokens": 801
+    }
+  },
+  "attempts": 1,
+  "generatedAt": "2026-11-18T17:57:55.084Z",
+  "prompt": "A cobertura medida é 27,7% e o time quer declarar threshold 80% no vitest para 'forçar' a meta. Isso é válido? Responda e diga a alternativa correta.",
+  "response": "Não é válido. Definir 80% imediatamente quebrará o pipeline de CI/CD em todas as execuções, paralisando entregas e incentivando testes fictícios ou bypasses nas regras.\n\nA alternativa correta é adotar uma abordagem incremental (catraca/ratchet): travar o threshold próximo ao patamar atual (~27%) para impedir regressões e aumentá-lo gradualmente a cada sprint, ou aplicar exigência de alta cobertura (ex: 80%) apenas sobre o código novo ou alterado (*diff coverage*) no CI.",
+  "judge": {
+    "status": "SCORED",
+    "score": 5,
+    "reason": "A resposta recusa expressamente a meta arbitrária e estabelece a estratégia de catraca ancorada no patamar medido de 27%.",
+    "model": "gemini-3.8-flash-high"
+  }
+}

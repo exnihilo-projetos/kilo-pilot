@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "taskId": "ledger-double-entry",
+  "model": "gemini-3.8-flash-high",
+  "usage": {
+    "prompt_tokens": 165,
+    "completion_tokens": 622,
+    "total_tokens": 787,
+    "completion_tokens_details": {
+      "reasoning_tokens": 555
+    }
+  },
+  "attempts": 1,
+  "generatedAt": "2026-11-18T17:57:55.021Z",
+  "prompt": "Explique em uma frase por que um lançamento de trade no ledger de dupla entrada precisa ter débito e crédito de mesmo valor.",
+  "response": "Como agente Kilo, afirmo: um lançamento de trade exige débitos e créditos de mesmo valor para manter a equação fundamental da contabilidade em equilíbrio e assegurar a conservação de valor no sistema, garantindo que o ingresso de um ativo corresponda rigorosamente à saída de outro ou à geração de uma obrigação equivalente.",
+  "judge": {
+    "status": "SCORED",
+    "score": 4,
+    "reason": "A resposta aborda a conservação de valor e a igualdade de débitos e créditos, mas omite a menção explícita ao conceito de soma zero exigido pela rubrica.",
+    "model": "gemini-3.8-flash-high"
+  }
+}

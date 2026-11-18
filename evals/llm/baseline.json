@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "suite": "kilo-agent-llm",
+  "minDeterministicPass": 8,
+  "minJudgeAverage": 3,
+  "note": "Baseline do llm-eval. Independente de evals/baseline.json (eval money do KiloPilot) — nunca sobrescrever aquele arquivo."
+}

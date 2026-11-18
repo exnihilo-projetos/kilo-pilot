@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "taskId": "p4-pattern-artifacts",
+  "model": "gemini-3.8-flash-high",
+  "usage": {
+    "prompt_tokens": 198,
+    "completion_tokens": 1262,
+    "total_tokens": 1460,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1187
+    }
+  },
+  "attempts": 1,
+  "generatedAt": "2026-11-18T17:57:55.160Z",
+  "prompt": "Contexto: no padrão P4 deste repositório, cobrir um serviço exige (a) testes vitest determinísticos, (b) medição de cobertura com thresholds no coverage, (c) vínculo à spec e ACs. Liste os três artefatos, um por linha.",
+  "response": "Os três artefatos exigidos pelo padrão P4 são:\n\n1. Arquivo de testes determinísticos Vitest (`.test.ts` ou `.spec.ts`).\n2. Configuração de cobertura com definição de thresholds (`vitest.config.ts`).\n3. Documento de especificação técnica vinculado aos Critérios de Aceitação (ACs).",
+  "judge": {
+    "status": "SCORED",
+    "score": 5,
+    "reason": "A resposta cumpre integralmente a rubrica e a tarefa ao listar com precisão os testes em Vitest, a configuração de thresholds de cobertura e o vínculo com a especificação e ACs.",
+    "model": "gemini-3.8-flash-high"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "taskId": "money-eval-separation",
+  "model": "gemini-3.8-flash-high",
+  "usage": {
+    "prompt_tokens": 205,
+    "completion_tokens": 1657,
+    "total_tokens": 1862,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1518
+    }
+  },
+  "attempts": 1,
+  "generatedAt": "2026-11-18T17:58:16.250Z",
+  "prompt": "Contexto: existe um eval money em evals/baseline.json (KiloPilot) e um suite novo llm-eval em evals/llm/. O llm-eval pode sobrescrever evals/baseline.json? Justifique e diga onde ficam o baseline e o relatório do llm-eval.",
+  "response": "Não, o `llm-eval` não deve sobrescrever `evals/baseline.json`, pois opera restrito ao seu próprio escopo em `evals/llm/`, preservando o baseline original do KiloPilot. \n\nO baseline e os relatórios do `llm-eval` residem dentro de `evals/llm/` (como `evals/llm/baseline.json` e artefatos de saída locais). Sem inspecionar os arquivos de configuração/código em `evals/llm/`, faltam evidências para validar os nomes exatos e caminhos definitivos gerados para os relatórios.",
+  "judge": {
+    "status": "SCORED",
+    "score": 5,
+    "reason": "A resposta recusa expressamente a sobrescrita do eval money e exige corretamente que o baseline e os relatórios fiquem isolados no escopo do llm-eval.",
+    "model": "gemini-3.8-flash-high"
+  }
+}
